@@ -1,0 +1,2507 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>
+				Real EstateIQ - Search	</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="include/bootstrap-3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/reiq.css" />
+<link rel="stylesheet" type="text/css" href="css/notification.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="libs/bootstrap-select/dist/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="custom.php" />
+<link rel="stylesheet" type="text/css" href="print.css" />
+<link rel="stylesheet" type="text/css" href="Lato/latofonts.css" />
+<link rel="stylesheet" type="text/css" href="libs/Datatables-1.10.9/media/fixedheader/fixedHeader.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="libs/slider/thumbnail-slider.css">
+<link rel="stylesheet" type="text/css" href="libs/slider/ninja-slider.css">
+<link rel="stylesheet" type="text/css" media="all" href="include/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css">
+<script type="text/javascript" src="include/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src='libs/jquery-ui-1.12.1/jquery-ui.min.js'></script>
+<script type="text/javascript" src="include/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/slider/thumbnail-slider.js"></script>
+<script type="text/javascript" src="libs/slider/ninja-slider.js"></script>
+<script type="text/javascript" src="libs/jquery-lazy/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="include/js/makeCssInline.js"></script>
+<script type="text/javascript" src="include/js/jquery.doubleScroll.js"></script>
+<script type="text/javascript" src="templates/datetimepicker_css.js"></script>
+
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyByu7nhQyce7SWPuKUpjdHP6_suxgSUteg&sensor=false"></script>
+<script type="text/javascript" src="libs/Datatables-1.10.9/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="libs/Datatables-1.10.9/media/responsive/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="libs/Datatables-1.10.9/media/fixedheader/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" src="libs/validators/validator.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap-select/dist/js/bootstrap-select.js"></script>
+<script type="text/javascript" src="include/js/stellarnav.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+<style type="text/css" title="currentStyle">@import "libs/DataTables-1.9.4/media/css/demo_table.css";</style>
+</head>
+<style type="text/css">
+
+	.dataTables_filter{
+		text-align:left !important;
+		left:170px !important;
+		font-weight:bold !important;
+	}
+
+	.dataTables_length{
+		left:0px !important;
+		font-weight:bold !important;
+		width:20% !important;
+	}
+</style>
+<body class="bodyadmin" id="bodyadmin">
+<div id="load"></div>
+<style type="text/css"> 
+	@-moz-document url-prefix() { 
+		.avm_main_fox { 
+			height: 96px; 
+		}
+	}
+</style>
+<div class="container" style="width: 100%">
+<div class="row desktop-menu avm_main_fox">
+<div class="col-sm-4 market-header-bg desk-hover1" align="right">
+<div class="dropdown desk-hover">
+<label class="dropbtn">
+Dallas-Fort Worth Metro
+<i class="fa fa-angle-down" aria-hidden="true" style="padding-left: 20px; font-size: 24px !important;"></i>
+</label>
+<div class="dropdown-content" align="left">
+<a href="http://DFW.realestateiq.me/v4" target=_blank id="realestateiq_dfw">
+<span class="bull">&bull; </span>
+DFW Metro
+</a>
+<a href="http://HOUSTON.realestateiq.me/v4" target=_blank id="realestateiq_houston">
+<span class="bull">&bull; </span>
+Houston Metro
+</a>
+</div>
+</div>
+</div>
+<div class="col-sm-8 logo-header-bg" align="right">
+
+</div>
+<div class="row mobile-menu">
+<div class="col-sm-12 logo-header-bg" align="right">
+<div align="right" class="agent-info-header">
+<img src="./uploads/broker/thumb/5825d2b9c20fb.jpg" class="logo img-responsive" />
+</div>
+<div align="center" style="color:#b2b2b2;">
+Provided By Angel Realtors
+</div>
+<div class="dropdownalign">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#ffffff; font-size: 12px;text-decoration: none;">v4.1<span class="caret"></span></a>
+<ul class="dropdown-menu dropdown-menu-version">
+<li><a href="https://www.realestateiq.me/client_app.php">version 3</a></li>
+</ul>
+</li>
+</div>
+</div>
+<div class="col-6 market-header-bg" style="width:100%; float: right">
+<div class="dropdown" align="left" style="width: 100%; text-align: center;">
+<label class="dropbtn">
+Dallas-Fort Worth Metro
+</label><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+<div class="dropdown-content" align="left" style="border-top: 1px solid #123962;">
+<a href="http://DFW.realestateiq.me/v4" target=_blank id="realestateiq_mobile_dfw">
+DFW Metro
+</a>
+<a href="http://HOUSTON.realestateiq.me/v4" target=_blank id="realestateiq_mobile_houston">
+Houston Metro
+</a>
+</div>
+</div>
+</div>
+</div>
+<style type="text/css">
+	@media(max-width: 767px) {
+		.top_header{
+			margin-left:10%;
+			float:left;
+		}
+	}
+</style>
+<script type="text/javascript">
+	var market_name = "";
+	var full = window.location.host; 
+	var parts = full.split('.');
+	if(parts != undefined && parts != null && parts.length == 3 ) {
+		market_name = (parts[0].toLowerCase() == "www") ? "dfw":parts[0].toLowerCase();
+		$('#realestateiq_' +market_name).css('display', 'none')
+		$('#realestateiq_mobile_' +market_name).css('display', 'none')
+	}
+</script><link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/r-2.2.1/datatables.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.2/css/fixedHeader.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+<div class="row">
+<div class="bluewhite">
+
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		jQuery('.stellarnav').stellarNav({
+			theme: 'light'
+		});
+
+		$(".full").on("click",function(){
+			$(".full i").toggleClass("fa-bars fa-close");
+		});
+
+		$(".dropdown").mouseover(function(){
+			$(".dropdown span i").toggleClass("fa-angle-up fa-angle-down");
+		});
+		$(".dropdown").mouseout(function(){
+			$(".dropdown span i").toggleClass("fa-angle-up fa-angle-down");
+		});
+		$(".desk-hover").mouseover(function(){
+			$(".market-header-bg").css("border-bottom","1px solid #123963");
+			$(".market-header-bg").css("padding","17px 0 16px 0");
+		});
+
+		$(".desk-hover").mouseout(function(){
+			$(".market-header-bg").css("border-bottom","none");
+			$(".market-header-bg").css("padding","17px 0 17px 0");
+		});
+
+		$(".desk-hover1").mouseover(function(){
+			$(".market-header-bg").css("border-bottom","1px solid #123963");
+			$(".market-header-bg").css("padding","17px 0 16px 0");
+		});
+
+		$(".desk-hover1").mouseout(function(){
+			$(".market-header-bg").css("border-bottom","none");
+			$(".market-header-bg").css("padding","17px 0 17px 0");
+		});
+	});
+</script>
+<style>
+	/* styles for this sample only */
+	*{ margin: 0; padding: 0; }
+	body { height: 100%; height: 100%; font-size: 16px; font-family: 'Exo 2', sans-serif; background: #efefef; font-weight: 300; }
+	.header { text-align: center; }
+	.header a { padding: 50px 0; display: block; font-size: 48px; text-decoration: none; color: #555; }
+	@media only screen and (max-width : 1000px) {
+		.stellarnav > ul > li > a { padding: 20px 23px; }
+	}
+	.nav_active a {
+		border-bottom: solid 4px #123963;
+		padding-bottom: 2px;
+		/*color: #fff !important;*/
+	}
+	/* styles for this sample only */
+</style>
+<br />
+<script type="text/javascript">
+	var url = window.location.search;
+	url = url.replace("?", '').split('&'); // remove the ?
+	if(url.length > 0) {
+		let header = url[0].split("=")[1];
+		if(header != undefined && header != null && header != "") {
+			$('.'+header.trim().toLowerCase()).addClass('nav_active');
+			// $('.analytics').addClass('nav_active');
+			console.log($('.'+header.trim().toLowerCase()))
+		} else {
+			$('.analytics').addClass('nav_active');
+		}
+	}
+</script>
+</div>
+</div>
+<style type="text/css">
+	.badge {
+		font-size: 14px;
+		font-weight: 600;
+		padding-bottom: 4px;
+		padding-top: 4px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 6px;
+		font-style: italic;
+		text-shadow: none;
+	}
+
+	table a {
+		color: #323232;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	#myCarousel {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.item img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.selected img {
+		opacity:0.5;
+	}
+	@media (min-width: 992px){
+		.modal-lg {
+			width: 1000px;
+		}
+	}
+	#detailsModal label, #base label {
+		margin-bottom: 0px !important;
+		font-weight: normal !important;
+	}
+
+	.bs-actionsbox .btn-group button{
+		margin: 0px;
+		border-radius: 16px;
+		border: solid 2px #ffce00;
+		background: #ffffff;
+	}
+	.bootstrap-select.btn-group .btn .filter-option {
+		text-align: center;
+		font-size: 14px;
+		font-style: italic;   
+	}
+	.panel-body {
+		min-height: 416px;
+	}
+	.btn {
+		font-size: 12px;
+	}
+
+	input[type="radio"], input[type="checkbox"] {
+		margin: 4px 0 0;
+		width: 11px;
+		height: 11px;
+		line-height: normal;
+	}
+	a {
+		color:#323232;
+		text-decoration: none;
+	}
+	.panel-heading {
+		margin-top:40px;
+		margin-bottom: -12px;
+		padding-top: 16px;
+	}
+	.panel-heading .accordion-toggle:after {
+		content: "\f139";
+		margin-top:0px;
+	}
+	.panel-heading .accordion-toggle.collapsed:after {
+		content: "\f13a";
+	}
+	.hidden {
+		display: none;
+	}
+</style>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+<div class="container" id="mlsSearchPage">
+<div class="row">
+<div class="row col-xs-12 col-sm-12 col-lg-12 col-md-12" style="">
+<div class="fastcma">MLS Deal Finder</div>
+</div>
+<div id="searchTabs">
+<ul class="hidden-xs hidden-sm col-md-12 col-lg-12 segmented-control-quickSearch">
+<li class="active quickSearch"><a href="#quickSearch" rel="quickSearch">Quick Search</a></li>
+<li class="newSearch"><a href="#newSearch" rel="newSearch">New Search</a></li>
+<li class="mySearches"><a href="#mySearches" onclick="list_MLSsavedsearches()" rel="mySearches">My Searches</a></li>
+</ul>
+</div>
+
+<div class="panel-heading visible-xs visible-sm" id="panel-quickSearch" style="margin-top: 60px;">
+<div class="accordion-toggle" data-toggle="collapse" data-target="#quickSearch-collapseDiv">
+<label class="control-label" style="display: inline-block;">Quick Search</label>
+</div>
+</div>
+
+<div id="quickSearch-collapseDiv" class="accordion-body collapse in">
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 stab_content-mlsSearch" id="quickSearch" style="padding-left:0;display: inline-block;">
+<form name="mls_quicksearch">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="form-group" style="margin-top: 35px;">
+<div align="left">
+<h3><b>Deal type</b></h3>
+</div>
+</div>
+<div class="form-group">
+<label class="radio-form radio-spacing">20%+ discount
+<input type="radio" name="deal_type" id="discountRadio" checked="checked" value="Discount">
+<span class="checkmark-radio"></span>
+</label>
+<label class="radio-form radio-spacing">0.8%+ rental index
+<input type="radio" name="deal_type" id="rentalindexRadio" value="Rentalindex">
+<span class="checkmark-radio"></span>
+</label>
+</div>
+<div class="form-group">
+<label class="control-label" for="geography">Geography<sup>*</sup></label>
+<div class="form-group">
+<label class="radio-form radio-spacing-city">County
+<input type="radio" name="geographySelect" id="countyRadio" checked="checked" value="county">
+<span class="checkmark-radio"></span>
+</label>
+<label class="radio-form radio-spacing">City
+<input type="radio" name="geographySelect" id="cityRadio" value="city">
+<span class="checkmark-radio"></span>
+</label>
+</div>
+<div class="form-group">
+<select class="form-control select-text geography" name="county" id="geographycounty">
+<option value="">Select County</option>
+<option value="0">Collin</option>
+<option value="1">Cooke</option>
+<option value="2">Dallas</option>
+<option value="3">Denton</option>
+<option value="4">Grayson</option>
+<option value="5">Hunt</option>
+</select>
+<select class="form-control select-text geography" name="city" id="geographycity" style='display:none'>
+<option value="">Select City</option>
+<option value="0">Addison</option>
+<option value="1">Allen</option>
+<option value="2">Anna</option>
+<option value="3">Apartment</option>
+<option value="4">Argyle</option>
+<option value="5">Aubrey</option>
+<option value="6">Balch Springs</option>
+<option value="7">Bartonville</option>
+<option value="8">Bells </option>
+<option value="9">Blue Ridge</option>
+<option value="10">Bolivar</option>
+<option value="11">Caddo Mills</option>
+<option value="12">Callisburg</option>
+<option value="13">Campbell</option>
+<option value="14">Carriagehouse</option>
+<option value="15">Carrollton</option>
+<option value="16">Cash</option>
+<option value="17">Cedar Hill</option>
+<option value="18">Celeste</option>
+<option value="19">Celina</option>
+<option value="20">Clark</option>
+<option value="21">Cockrell Hill </option>
+<option value="22">Cokrell Hill</option>
+<option value="23">Collinsville</option>
+<option value="24">Commerce</option>
+<option value="25">Copeville</option>
+<option value="26">Coppell</option>
+<option value="27">Copper Canyon</option>
+<option value="28">Corinth</option>
+<option value="29">Corral City</option>
+<option value="30">Cross Roads</option>
+<option value="31">Cumby</option>
+<option value="32">Dallas</option>
+<option value="33">De Soto</option>
+<option value="34">Denison </option>
+<option value="35">Denton</option>
+<option value="36">Desoto</option>
+<option value="37">Dish</option>
+<option value="38">Dorchester</option>
+<option value="39">Double Oak</option>
+<option value="40">Duncanville</option>
+<option value="41">Era</option>
+<option value="42">Fairview</option>
+<option value="43">Farmers Branch</option>
+<option value="44">Farmersville</option>
+<option value="45">Ferris </option>
+<option value="46">Flower Mound</option>
+<option value="47">Forestburg</option>
+<option value="48">Frisco</option>
+<option value="49">Gainesville </option>
+<option value="50">Garland</option>
+<option value="51">Glenn Heights</option>
+<option value="52">Gordonville</option>
+<option value="53">Grand Prairie</option>
+<option value="54">Greenville </option>
+<option value="55">Gunter</option>
+<option value="56">Hackberry</option>
+<option value="57">Hawk Cove </option>
+<option value="58">Hebron</option>
+<option value="59">Hi Rise</option>
+<option value="60">Hickory Creek</option>
+<option value="61">Highland Park</option>
+<option value="62">Highland Village</option>
+<option value="63">Howe</option>
+<option value="64">Hutchins</option>
+<option value="65">Irving</option>
+<option value="66">Josephine</option>
+<option value="67">Justin</option>
+<option value="68">Kingston</option>
+<option value="69">Knollwood</option>
+<option value="70">Krugerville</option>
+<option value="71">Krum</option>
+<option value="72">Ladonia</option>
+<option value="73">Lake Dallas</option>
+<option value="74">Lake Kiowa</option>
+<option value="75">Lakewood Village</option>
+<option value="76">Lancaster</option>
+<option value="77">Lantana</option>
+<option value="78">Lavon</option>
+<option value="79">Leonard</option>
+<option value="80">Lewisville</option>
+<option value="81">Lincoln Park</option>
+<option value="82">Lindsay </option>
+<option value="83">Little Elm</option>
+<option value="84">Lone Oak </option>
+<option value="85">Lowry Crossing</option>
+<option value="86">Lucas</option>
+<option value="87">Luella</option>
+<option value="88">McKinney</option>
+<option value="89">Melissa</option>
+<option value="90">Merit</option>
+<option value="91">Mesquite</option>
+<option value="92">Muenster</option>
+<option value="93">Murphy</option>
+<option value="94">Myra</option>
+<option value="95">Nevada</option>
+<option value="96">New Hope</option>
+<option value="97">Neylandville</option>
+<option value="98">Northlake</option>
+<option value="99">Oak Point</option>
+<option value="100">Oak Ridge</option>
+<option value="101">Ovilla </option>
+<option value="102">Parker</option>
+<option value="103">Pecan Gap</option>
+<option value="104">Pilo Point</option>
+<option value="105">Pilot Point</option>
+<option value="106">Plano</option>
+<option value="107">Poetry</option>
+<option value="108">Ponder</option>
+<option value="109">Pottsboro</option>
+<option value="110">Princeton</option>
+<option value="111">Prosper</option>
+<option value="112">Providence Village</option>
+<option value="113">Quinlan</option>
+<option value="114">Red Oak</option>
+<option value="115">Richardson</option>
+<option value="116">Roanoke</option>
+<option value="117">Rockwall</option>
+<option value="118">Rosston</option>
+<option value="119">Rowlett</option>
+<option value="120">Royse City</option>
+<option value="121">Sachse</option>
+<option value="122">Sadler</option>
+<option value="123">Saint Jo</option>
+<option value="124">Saint Paul</option>
+<option value="125">San Jose</option>
+<option value="126">Sanger</option>
+<option value="127">Savannah</option>
+<option value="128">Savoy</option>
+<option value="129">Seagoville</option>
+<option value="130">Shady Shores</option>
+<option value="131">Sherman </option>
+<option value="132">Southmayd</option>
+<option value="133">St Paul</option>
+<option value="134">Sunnyvale</option>
+<option value="135">The Colony</option>
+<option value="136">Tioga</option>
+<option value="137">Tom Bean</option>
+<option value="138">Trenton</option>
+<option value="139">Trophy Club</option>
+<option value="140">Union Valley </option>
+<option value="141">University Park</option>
+<option value="142">Valley View</option>
+<option value="143">Van Alstyne </option>
+<option value="144">Wagner</option>
+<option value="145">West Tawakoni </option>
+<option value="146">Westminster </option>
+<option value="147">Weston</option>
+<option value="148">Whitesboro </option>
+<option value="149">Whitewright</option>
+<option value="150">Wills Point</option>
+<option value="151">Wilmer</option>
+<option value="152">Wolfe City</option>
+<option value="153">Wylie</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label" for="lastupdated">Last Updated</label>
+<input type="text" id="daterange" name="daterange" class="form-control" value="" placeholder="Select timeframe" autocomplete="off" />
+<span></span>
+</div>
+</div>
+<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+<button class="form-control btn search-button" style="float: right; margin-bottom: 36px;" onclick="searchQuick(event)">
+<span id="runsearchQuick">SEARCH</span>
+<span id="runsearchQuickspin" class="fa fa-refresh fa-spin" style="display: none;"></span>
+</button>
+<div class="" data-notification-status="" id="errorMessageQuicksearch"></div>
+</div>
+</form>
+</div>
+</div>
+<hr style="border:1px solid #ffffff;background-color: #ffffff;" class="hidden-lg hidden-sm hidden-md">
+
+<div class="panel-heading visible-xs visible-sm" id="panel-newSearch">
+<div class="accordion-toggle" data-toggle="collapse" data-target="#newSearch-collapseDiv">
+<label class="control-label" style="display: inline-block;">New Search</label>
+</div>
+</div>
+
+<div id="newSearch-collapseDiv" class="accordion-body collapse in">
+<div class="col-xs-12 col-sm-12 col-lg-12 stab_content-mlsSearch" id="newSearch" style="padding-bottom: 24px;">
+<div class="form-group" style="margin-top: 35px;">
+<div align="left">
+<h3><b>Search type</b></h3>
+</div>
+</div>
+<div class="form-group">
+<label class="radio-form radio-spacing">Multiple properties
+<input type="radio" name="newsearchdiv" id="multipleRadio" checked="checked" value="Multipleproperties">
+<span class="checkmark-radio"></span>
+</label>
+<div class="block">
+<label class="radio-form radio-spacing">Individual property (MLS number)
+<input type="radio" name="newsearchdiv" id="individualRadio" value="Individualproperties">
+<span class="checkmark-radio"></span>
+</label>
+</div>
+</div>
+<hr style="height: 1px; background-color: #999999;">
+
+<form name="mls_individualsearch">
+<div class="search" id='searchIndividualproperties' style='display:none'>
+<div class="form-group">
+<div class="titleProperty">Individual property</div>
+</div>
+<div class="col-sm-4" id='individualSearch' style="padding-left: 0px;">
+<div class="form-group">
+<label for="mls_num" class="control-label">MLS Number</label>
+<input type=text name="mls_num" class="mls_number form-control" id="mlsnumber" required />
+</div>
+</div>
+<div class="col-sm-4" style="padding-left: 0px;">
+<div class="form-group">
+<button class="form-control btn search-button" style="margin-top:20px;" onclick="searchMlsIndividual(event)">
+<span id="runsearchMlsIndividual">SEARCH</span>
+<span id="runsearchMlsIndividualspin" class="fa fa-refresh fa-spin" style="display: none;"></span>
+</button>
+</div>
+</div>
+<div class="row col-sm-12 col-xs-12 col-lg-12 col-md-12">
+<div class="" data-notification-status="" id="errorMessageMLSsearch"></div>
+</div>
+</div>
+</form>
+
+<form name="mls_multiplesearch">
+<div class="search" id="searchMultipleproperties">
+<div class="" data-notification-status="" id="errorMessageNewsearch"></div>
+<div class="form-group">
+<div class="titleProperty">Multiple properties</div>
+</div>
+<div id="saved_search_title" class="form-group"></div>
+
+<div class="col-sm-6" style="padding-left: 0px;">
+
+<div class="form-group">
+<label class="control-label" for="statustype">Status Type<sup>*</sup></label>
+<div name="statusselect">
+<select class="selectpicker" title="Any type" data-actions-box="true" data-live-search="false" data-focus-off="true" data-width="100%" data-header="Select status type" name="statustype[]" id="selectStatustype">
+<option value="1">Active</option>
+<option value="2">Pending</option>
+<option value="3">Option Pending</option>
+</select>
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="control-label" for="geographynew">Geography<sup>*</sup></label>
+<div class="form-group">
+<label class="radio-form radio-spacing">County
+<input type="radio" name="geographynewSelect" id="countyRadio" checked="checked" value="county">
+<span class="checkmark-radio"></span>
+</label>
+<label class="radio-form radio-spacing">City
+<input type="radio" name="geographynewSelect" id="cityRadio" value="city">
+<span class="checkmark-radio"></span>
+</label>
+<label class="radio-form radio-spacing">Zip Code
+<input type="radio" name="geographynewSelect" id="zipcodeRadio" value="zipcode">
+<span class="checkmark-radio"></span>
+</label>
+</div>
+<div class="form-group">
+<div class="geographynew" name="countyselect" id="geographynewcounty">
+<select class="selectpicker" title="Select county" multiple data-selected-text-format="count > 5" data-size="5" data-actions-box="true" data-live-search="true" data-focus-off="true" data-width="100%" data-header="Select county" name="county[]" id="county">
+<option value="0">Collin</option>
+<option value="1">Cooke</option>
+<option value="2">Dallas</option>
+<option value="3">Denton</option>
+<option value="4">Grayson</option>
+<option value="5">Hunt</option>
+</select>
+</div>
+<div class="geographynew" name="cityselect" id="geographynewcity" style='display:none'>
+<select class="selectpicker" title="Select city" multiple data-size="5" data-selected-text-format="count > 5" data-actions-box="true" data-live-search="true" data-focus-off="true" data-width="100%" data-header="Select city" name="city[]" id="city">
+<option value="0">Addison</option>
+<option value="1">Allen</option>
+<option value="2">Anna</option>
+<option value="3">Apartment</option>
+<option value="4">Argyle</option>
+<option value="5">Aubrey</option>
+<option value="6">Balch Springs</option>
+<option value="7">Bartonville</option>
+<option value="8">Bells </option>
+<option value="9">Blue Ridge</option>
+<option value="10">Bolivar</option>
+<option value="11">Caddo Mills</option>
+<option value="12">Callisburg</option>
+<option value="13">Campbell</option>
+<option value="14">Carriagehouse</option>
+<option value="15">Carrollton</option>
+<option value="16">Cash</option>
+<option value="17">Cedar Hill</option>
+<option value="18">Celeste</option>
+<option value="19">Celina</option>
+<option value="20">Clark</option>
+<option value="21">Cockrell Hill </option>
+<option value="22">Cokrell Hill</option>
+<option value="23">Collinsville</option>
+<option value="24">Commerce</option>
+<option value="25">Copeville</option>
+<option value="26">Coppell</option>
+<option value="27">Copper Canyon</option>
+<option value="28">Corinth</option>
+<option value="29">Corral City</option>
+<option value="30">Cross Roads</option>
+<option value="31">Cumby</option>
+<option value="32">Dallas</option>
+<option value="33">De Soto</option>
+<option value="34">Denison </option>
+<option value="35">Denton</option>
+<option value="36">Desoto</option>
+<option value="37">Dish</option>
+<option value="38">Dorchester</option>
+<option value="39">Double Oak</option>
+<option value="40">Duncanville</option>
+<option value="41">Era</option>
+<option value="42">Fairview</option>
+<option value="43">Farmers Branch</option>
+<option value="44">Farmersville</option>
+<option value="45">Ferris </option>
+<option value="46">Flower Mound</option>
+<option value="47">Forestburg</option>
+<option value="48">Frisco</option>
+<option value="49">Gainesville </option>
+<option value="50">Garland</option>
+<option value="51">Glenn Heights</option>
+<option value="52">Gordonville</option>
+<option value="53">Grand Prairie</option>
+<option value="54">Greenville </option>
+<option value="55">Gunter</option>
+<option value="56">Hackberry</option>
+<option value="57">Hawk Cove </option>
+<option value="58">Hebron</option>
+<option value="59">Hi Rise</option>
+<option value="60">Hickory Creek</option>
+<option value="61">Highland Park</option>
+<option value="62">Highland Village</option>
+<option value="63">Howe</option>
+<option value="64">Hutchins</option>
+<option value="65">Irving</option>
+<option value="66">Josephine</option>
+<option value="67">Justin</option>
+<option value="68">Kingston</option>
+<option value="69">Knollwood</option>
+<option value="70">Krugerville</option>
+<option value="71">Krum</option>
+<option value="72">Ladonia</option>
+<option value="73">Lake Dallas</option>
+<option value="74">Lake Kiowa</option>
+<option value="75">Lakewood Village</option>
+<option value="76">Lancaster</option>
+<option value="77">Lantana</option>
+<option value="78">Lavon</option>
+<option value="79">Leonard</option>
+<option value="80">Lewisville</option>
+<option value="81">Lincoln Park</option>
+<option value="82">Lindsay </option>
+<option value="83">Little Elm</option>
+<option value="84">Lone Oak </option>
+<option value="85">Lowry Crossing</option>
+<option value="86">Lucas</option>
+<option value="87">Luella</option>
+<option value="88">McKinney</option>
+<option value="89">Melissa</option>
+<option value="90">Merit</option>
+<option value="91">Mesquite</option>
+<option value="92">Muenster</option>
+<option value="93">Murphy</option>
+<option value="94">Myra</option>
+<option value="95">Nevada</option>
+<option value="96">New Hope</option>
+<option value="97">Neylandville</option>
+<option value="98">Northlake</option>
+<option value="99">Oak Point</option>
+<option value="100">Oak Ridge</option>
+<option value="101">Ovilla </option>
+<option value="102">Parker</option>
+<option value="103">Pecan Gap</option>
+<option value="104">Pilo Point</option>
+<option value="105">Pilot Point</option>
+<option value="106">Plano</option>
+<option value="107">Poetry</option>
+<option value="108">Ponder</option>
+<option value="109">Pottsboro</option>
+<option value="110">Princeton</option>
+<option value="111">Prosper</option>
+<option value="112">Providence Village</option>
+<option value="113">Quinlan</option>
+<option value="114">Red Oak</option>
+<option value="115">Richardson</option>
+<option value="116">Roanoke</option>
+<option value="117">Rockwall</option>
+<option value="118">Rosston</option>
+<option value="119">Rowlett</option>
+<option value="120">Royse City</option>
+<option value="121">Sachse</option>
+<option value="122">Sadler</option>
+<option value="123">Saint Jo</option>
+<option value="124">Saint Paul</option>
+<option value="125">San Jose</option>
+<option value="126">Sanger</option>
+<option value="127">Savannah</option>
+<option value="128">Savoy</option>
+<option value="129">Seagoville</option>
+<option value="130">Shady Shores</option>
+<option value="131">Sherman </option>
+<option value="132">Southmayd</option>
+<option value="133">St Paul</option>
+<option value="134">Sunnyvale</option>
+<option value="135">The Colony</option>
+<option value="136">Tioga</option>
+<option value="137">Tom Bean</option>
+<option value="138">Trenton</option>
+<option value="139">Trophy Club</option>
+<option value="140">Union Valley </option>
+<option value="141">University Park</option>
+<option value="142">Valley View</option>
+<option value="143">Van Alstyne </option>
+<option value="144">Wagner</option>
+<option value="145">West Tawakoni </option>
+<option value="146">Westminster </option>
+<option value="147">Weston</option>
+<option value="148">Whitesboro </option>
+<option value="149">Whitewright</option>
+<option value="150">Wills Point</option>
+<option value="151">Wilmer</option>
+<option value="152">Wolfe City</option>
+<option value="153">Wylie</option>
+</select>
+</div>
+<div class="geographynew" name="zipcodeselect" id="geographynewzipcode" style='display:none'>
+<select class="selectpicker" title="Select zipcode" multiple data-size="5" data-selected-text-format="count > 5" data-actions-box="true" data-live-search="true" data-focus-off="true" data-width="100%" data-header="Select zipcode" name="zip[]" id="zip">
+<option value="0">75001</option>
+<option value="1">75002</option>
+<option value="2">75006</option>
+<option value="3">75007</option>
+<option value="4">75009</option>
+<option value="5">75010</option>
+<option value="6">75011</option>
+<option value="7">75013</option>
+<option value="8">75014</option>
+<option value="9">75015</option>
+<option value="10">75016</option>
+<option value="11">75017</option>
+<option value="12">75019</option>
+<option value="13">75020</option>
+<option value="14">75021</option>
+<option value="15">75022</option>
+<option value="16">75023</option>
+<option value="17">75024</option>
+<option value="18">75025</option>
+<option value="19">75026</option>
+<option value="20">75027</option>
+<option value="21">75028</option>
+<option value="22">75029</option>
+<option value="23">75030</option>
+<option value="24">75034</option>
+<option value="25">75035</option>
+<option value="26">75037</option>
+<option value="27">75038</option>
+<option value="28">75039</option>
+<option value="29">75040</option>
+<option value="30">75041</option>
+<option value="31">75042</option>
+<option value="32">75043</option>
+<option value="33">75044</option>
+<option value="34">75045</option>
+<option value="35">75046</option>
+<option value="36">75047</option>
+<option value="37">75048</option>
+<option value="38">75049</option>
+<option value="39">75050</option>
+<option value="40">75051</option>
+<option value="41">75052</option>
+<option value="42">75053</option>
+<option value="43">75054</option>
+<option value="44">75056</option>
+<option value="45">75057</option>
+<option value="46">75060</option>
+<option value="47">75061</option>
+<option value="48">75062</option>
+<option value="49">75063</option>
+<option value="50">75065</option>
+<option value="51">75067</option>
+<option value="52">75068</option>
+<option value="53">75069</option>
+<option value="54">75070</option>
+<option value="55">75071</option>
+<option value="56">75074</option>
+<option value="57">75075</option>
+<option value="58">75077</option>
+<option value="59">75078</option>
+<option value="60">75080</option>
+<option value="61">75081</option>
+<option value="62">75082</option>
+<option value="63">75083</option>
+<option value="64">75085</option>
+<option value="65">75086</option>
+<option value="66">75088</option>
+<option value="67">75089</option>
+<option value="68">75093</option>
+<option value="69">75094</option>
+<option value="70">75097</option>
+<option value="71">75098</option>
+<option value="72">75099</option>
+<option value="73">75104</option>
+<option value="74">75105</option>
+<option value="75">75106</option>
+<option value="76">75114</option>
+<option value="77">75115</option>
+<option value="78">75116</option>
+<option value="79">75118</option>
+<option value="80">75121</option>
+<option value="81">75123</option>
+<option value="82">75126</option>
+<option value="83">75134</option>
+<option value="84">75135</option>
+<option value="85">75137</option>
+<option value="86">75138</option>
+<option value="87">75141</option>
+<option value="88">75142</option>
+<option value="89">75143</option>
+<option value="90">75146</option>
+<option value="91">75147</option>
+<option value="92">75149</option>
+<option value="93">75150</option>
+<option value="94">75157</option>
+<option value="95">75158</option>
+<option value="96">75159</option>
+<option value="97">75160</option>
+<option value="98">75161</option>
+<option value="99">75164</option>
+<option value="100">75166</option>
+<option value="101">75172</option>
+<option value="102">75173</option>
+<option value="103">75180</option>
+<option value="104">75181</option>
+<option value="105">75182</option>
+<option value="106">75185</option>
+<option value="107">75187</option>
+<option value="108">75201</option>
+<option value="109">75202</option>
+<option value="110">75203</option>
+<option value="111">75204</option>
+<option value="112">75205</option>
+<option value="113">75206</option>
+<option value="114">75207</option>
+<option value="115">75208</option>
+<option value="116">75209</option>
+<option value="117">75210</option>
+<option value="118">75211</option>
+<option value="119">75212</option>
+<option value="120">75214</option>
+<option value="121">75215</option>
+<option value="122">75216</option>
+<option value="123">75217</option>
+<option value="124">75218</option>
+<option value="125">75219</option>
+<option value="126">75220</option>
+<option value="127">75221</option>
+<option value="128">75222</option>
+<option value="129">75223</option>
+<option value="130">75224</option>
+<option value="131">75225</option>
+<option value="132">75226</option>
+<option value="133">75227</option>
+<option value="134">75228</option>
+<option value="135">75229</option>
+<option value="136">75230</option>
+<option value="137">75231</option>
+<option value="138">75232</option>
+<option value="139">75233</option>
+<option value="140">75234</option>
+<option value="141">75235</option>
+<option value="142">75236</option>
+<option value="143">75237</option>
+<option value="144">75238</option>
+<option value="145">75240</option>
+<option value="146">75241</option>
+<option value="147">75242</option>
+<option value="148">75243</option>
+<option value="149">75244</option>
+<option value="150">75245</option>
+<option value="151">75246</option>
+<option value="152">75247</option>
+<option value="153">75248</option>
+<option value="154">75249</option>
+<option value="155">75250</option>
+<option value="156">75251</option>
+<option value="157">75252</option>
+<option value="158">75253</option>
+<option value="159">75254</option>
+<option value="160">75258</option>
+<option value="161">75260</option>
+<option value="162">75261</option>
+<option value="163">75262</option>
+<option value="164">75263</option>
+<option value="165">75264</option>
+<option value="166">75265</option>
+<option value="167">75266</option>
+<option value="168">75267</option>
+<option value="169">75270</option>
+<option value="170">75275</option>
+<option value="171">75277</option>
+<option value="172">75283</option>
+<option value="173">75284</option>
+<option value="174">75285</option>
+<option value="175">75286</option>
+<option value="176">75287</option>
+<option value="177">75301</option>
+<option value="178">75303</option>
+<option value="179">75310</option>
+<option value="180">75312</option>
+<option value="181">75313</option>
+<option value="182">75315</option>
+<option value="183">75320</option>
+<option value="184">75323</option>
+<option value="185">75326</option>
+<option value="186">75334</option>
+<option value="187">75336</option>
+<option value="188">75339</option>
+<option value="189">75340</option>
+<option value="190">75342</option>
+<option value="191">75343</option>
+<option value="192">75344</option>
+<option value="193">75353</option>
+<option value="194">75354</option>
+<option value="195">75355</option>
+<option value="196">75356</option>
+<option value="197">75357</option>
+<option value="198">75358</option>
+<option value="199">75359</option>
+<option value="200">75360</option>
+<option value="201">75363</option>
+<option value="202">75364</option>
+<option value="203">75367</option>
+<option value="204">75368</option>
+<option value="205">75370</option>
+<option value="206">75371</option>
+<option value="207">75372</option>
+<option value="208">75373</option>
+<option value="209">75374</option>
+<option value="210">75376</option>
+<option value="211">75378</option>
+<option value="212">75379</option>
+<option value="213">75380</option>
+<option value="214">75381</option>
+<option value="215">75382</option>
+<option value="216">75386</option>
+<option value="217">75387</option>
+<option value="218">75388</option>
+<option value="219">75389</option>
+<option value="220">75390</option>
+<option value="221">75391</option>
+<option value="222">75392</option>
+<option value="223">75393</option>
+<option value="224">75394</option>
+<option value="225">75395</option>
+<option value="226">75396</option>
+<option value="227">75397</option>
+<option value="228">75398</option>
+<option value="229">75401</option>
+<option value="230">75402</option>
+<option value="231">75403</option>
+<option value="232">75404</option>
+<option value="233">75407</option>
+<option value="234">75409</option>
+<option value="235">75422</option>
+<option value="236">75423</option>
+<option value="237">75424</option>
+<option value="238">75428</option>
+<option value="239">75429</option>
+<option value="240">75442</option>
+<option value="241">75453</option>
+<option value="242">75454</option>
+<option value="243">75458</option>
+<option value="244">75474</option>
+<option value="245">75496</option>
+<option value="246">75952</option>
+<option value="247">76001</option>
+<option value="248">76002</option>
+<option value="249">76003</option>
+<option value="250">76004</option>
+<option value="251">76005</option>
+<option value="252">76006</option>
+<option value="253">76007</option>
+<option value="254">76008</option>
+<option value="255">76010</option>
+<option value="256">76011</option>
+<option value="257">76012</option>
+<option value="258">76013</option>
+<option value="259">76014</option>
+<option value="260">76015</option>
+<option value="261">76016</option>
+<option value="262">76017</option>
+<option value="263">76018</option>
+<option value="264">76019</option>
+<option value="265">76020</option>
+<option value="266">76021</option>
+<option value="267">76022</option>
+<option value="268">76023</option>
+<option value="269">76036</option>
+<option value="270">76039</option>
+<option value="271">76040</option>
+<option value="272">76052</option>
+<option value="273">76054</option>
+<option value="274">76063</option>
+<option value="275">76066</option>
+<option value="276">76201</option>
+<option value="277">76202</option>
+<option value="278">76203</option>
+<option value="279">76204</option>
+<option value="280">76205</option>
+<option value="281">76206</option>
+<option value="282">76207</option>
+<option value="283">76208</option>
+<option value="284">76209</option>
+<option value="285">76210</option>
+<option value="286">76226</option>
+<option value="287">76227</option>
+<option value="288">76238</option>
+<option value="289">76240</option>
+<option value="290">76241</option>
+<option value="291">76247</option>
+<option value="292">76249</option>
+<option value="293">76250</option>
+<option value="294">76252</option>
+<option value="295">76253</option>
+<option value="296">76258</option>
+<option value="297">76259</option>
+<option value="298">76262</option>
+<option value="299">76263</option>
+<option value="300">76266</option>
+<option value="301">76272</option>
+<option value="302">76299</option>
+</select>
+</div>
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label" for="propertyType">Property Subtype<sup>*</sup></label>
+<div>
+<select class="selectpicker" title="Select property sub types" multiple data-selected-text-format="count > 5" data-size="5" data-actions-box="true" data-live-search="false" data-focus-off="false" data-width="100%" data-header="Select type" name="propsubtype[]" id="propsubtype">
+<option value="0">RES-Condo</option>
+<option value="1">RES-Farm/Ranch</option>
+<option value="2">RES-Half Duplex</option>
+<option value="3">RES-Single Family</option>
+<option value="4">RES-Townhouse</option>
+</select>
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label" for="listPrice">List Price<sup>*</sup></label>
+</div>
+<div class="form-group">
+<div class="col-md-6 col-lg-6 col-xs-6">
+<label for="amount" class="control-label property">Min</label>
+<input type="text" name="lpmin" id="amount-min" data-index="0" class="lpmin form-control" value="0" placeholder="$0" />
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+<label for="amount" class="control-label property">Max</label>
+<input type="text" name="lpmax" id="amount-max" data-index="1" class="lpmax form-control" value="5000000" placeholder="$10,000,000+" />
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label" for="lastupdated">Last Updated</label>
+</div>
+<div class="form-group">
+<input type="text" id="cmadaterange" name="cmadaterange" class="form-control" value="" placeholder="select timeframe" autocomplete="off" />
+</div>
+</div>
+
+<div class="col-sm-6" style="padding-left: 0px;">
+<div class="panel panel-default" style="background-color: #cccccc;">
+<div class="panel-body">
+<div class="form-group"><b>Deal type</b>
+<p>Search deals by discount %, rental index, or both. At least one deal type is required</p>
+</div>
+<div class="form-group">
+<label class="control-label" for="discount">Discount %<sup class="tooltip"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext" style="background-color: #f0f0f0 !important;">leaving the input field empty will exclude the Discount% parameter from the search filter.</span></sup></label>
+</div>
+<div class="form-group">
+<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+<label for="amount" class="control-label property">Min</label>
+<input type="text" name="estequipercmin" id="discount-min" value="0" class="form-control estequipercmin" placeholder="0%">
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+<label for="amount" class="control-label property">Max</label>
+<input type="text" name="estequipercmax" id="discount-max" value="100" class="form-control estequipercmax" placeholder="100%">
+</div>
+<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+<div id="discount-range"></div>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label" for="rentalIndex">Rental index<sup class="tooltip"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext" style="background-color: #f0f0f0 !important;">leaving the input field empty will exclude the Rental Index parameter from the search filter.</span></sup></label>
+</div>
+<div class="form-group">
+<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+<label for="amount" class="control-label property">Min</label>
+<input type="text" name="rentalindexmin" id="rentalIndex-min" value="0" class="form-control rentalindexmin" placeholder="0.0">
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+<label for="amount" class="control-label property">Max</label>
+<input type="text" name="rentalindexmax" id="rentalIndex-max" value="5" class="form-control rentalindexmax" placeholder="5.0">
+</div>
+<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+<div id="rentalIndex-range"></div>
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+<div class="container col-sm-12 col-md-12 col-lg-12 col-xs-12">
+<div class="row">
+<div class="col-md-6">
+<button class="form-control btn delete-button newsearchClear" type="reset" id="resetForm" name="submit" value="Clear">
+CLEAR
+</button>
+</div>
+<div class="col-md-6 text-right">
+<button class="form-control btn delete-button newsearchSaveas" type="button" value="Saveas" name="delete" id="newsearch_saveas" data-toggle="modal" data-target="#saveasModal">
+SAVE AS
+</button>
+<button class="form-control btn search-button Submit newsearchSearch" onclick="searchMlsMultiple(event)">
+<span id="runsearchMlsMultiple">SEARCH</span>
+<span id="runsearchMlsMultiplespin" class="fa fa-refresh fa-spin" style="display: none;"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<hr style="border:1px solid #ffffff;background-color: #ffffff;" class="hidden-lg hidden-sm hidden-md">
+
+<div class="panel-heading visible-xs visible-sm" id="panel-mySearch" onclick="list_MLSsavedsearches()">
+<div class="accordion-toggle" data-toggle="collapse" data-target="#mySearches-collapseDiv">
+<label class="control-label" style="display: inline-block;">My Searches</label>
+</div>
+</div>
+
+<div id="mySearches-collapseDiv" class="accordion-body collapse in">
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 stab_content-mlsSearch" id="mySearches">
+<div class="" data-notification-status="" id="message_savedlist"></div>
+<div id="container">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 spinner_listmlsSavedsearches" style="background-color:transparent;margin-bottom:200px;"><span class="fa fa-refresh fa-spin"></span> Loading...</div>
+</div>
+<div id="Norecords" class="col-sm-12" style="display: none;">
+<div class="jumbotron">
+<h2>No saved searches found!</h2>
+<div class="form-group" style="font-size: 14px;color: #999999;text-align: left;">
+<span>You don't have any saved searches yet, when you save a search, you will see them here!.</span>
+</div>
+</div>
+</div>
+<div id="Recordsfound" class="col-sm-12" style="display: none;">
+<div class="form-group" style="margin-top:35px;">
+<div align="left">
+<h3><b>Search type</b></h3>
+</div>
+</div>
+<div class="form-group">
+<label class="radio-form radio-spacing">Saved search
+<input type="radio" name="mysearchdiv" id="savedsearchRadio" checked="checked" value="savedSearch">
+<span class="checkmark-radio"></span>
+</label>
+<label class="radio-form radio-spacing">Automated search
+<input type="radio" name="mysearchdiv" id="automatedsearchRadio" value="automatedSearch">
+<span class="checkmark-radio"></span>
+</label>
+
+<div class="mysearch" id='mysearchsavedSearch'>
+<div class="col-sm-12">
+<div class="row" style="margin-bottom: 40px;">
+<div class="header-body">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 listmlsSavedsearches" style="background-color:transparent;">
+<div class="widget stacked widget-table action-table table-responsive" style="margin-bottom: 40px;">
+<div class="widget-content" style="background-color: transparent;">
+<table id="listmlssearch" class="table display table-bordered" width="100%" style="margin-bottom: 10px;">
+<thead class="widget-header">
+<tr>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mysearch" id='mysearchautomatedSearch' style='display:none'>
+ <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+<div class="form-group" style="font-size: 14px;color: #999999;text-align: left;">
+<span>Send automated reports by email as soon as deals are listed in the market. Reports are created when there are new properties in the marketplace or any properties with price changes that meet your search criteria.</span>
+</div>
+<div class="row" style="margin-bottom: 40px;">
+<div class="header-body">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 listmlsSavedsearches" style="background-color:transparent;">
+<div class="widget stacked widget-table action-table table-responsive" style="margin-bottom: 40px;">
+<div class="widget-content" style="background-color: transparent;">
+<table id="listmlsautomatedsearch" class="table display table-bordered" width="100%" style="margin-bottom: 10px;">
+<thead class="widget-header">
+<tr>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr style="border:1px solid #ffffff;background-color: #ffffff;" class="hidden-lg hidden-sm hidden-md">
+<div class="row col-xs-12 col-sm-12 col-lg-12 col-md-12 form-group" style="margin-top: 41px;">
+<p style="font-size: 16px;"><i class="fa fa-info-circle" aria-hidden="true"></i> Learn about <sup class="badge badge-warning-light">coming soon</sup></p>
+<ul style="margin-left:30px;">
+<li style="color: #323232;text-align: left;font-size: 14px;"><u disabled="disabled"><a href="#" style="cursor:not-allowed; color: #999999;font-size: 14px;pointer-events: none;" disabled="disabled">Using Quick Search</a></u></li>
+<li style="color: #323232;text-align: left;font-size: 14px;"><u disabled="disabled"><a href="#" style="cursor:not-allowed; color: #999999;font-size: 14px;pointer-events: none;" disabled="disabled">Creating a new search</a></u></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container" id="mls_Result" style="display: none">
+<div class="row">
+<div class="row col-xs-12 col-sm-12 col-lg-12 col-md-12">
+<div class="fastcma" id="mlsresultHeader"></div>
+</div>
+<div class="row col-xs-12 col-sm-6 col-lg-6 col-md-6 pull-right">
+<button class="form-control btn button-dealsFound" type="button" style="font-size: 14px !important"> <span id="numofDeals"></span> deals found</a></button>
+</div>
+</div>
+<div class="row">
+
+<div class="base" id="base">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12" style="padding-left: 5px; color: #ffffff; padding-top: 8px;">
+<div class="row col-sm-10 col-md-10 col-lg-10 col-xs-12">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+<label class="control-label">
+<h5 style="white-space: nowrap;width: 100%; overflow: hidden; text-overflow: ellipsis;" id="mlsGeography"></h5>
+</label>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+<label for="discount" class="control-label" id="mlsDiscount"></label>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+<label for="last_update" class="control-label" id="mlsLastupdated"></label>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+<label style="white-space: nowrap;width: 100%; overflow: hidden; text-overflow: ellipsis;" for="status" class="control-label" id="mlsStatustype"></label><br />
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+<label for="list_price" class="control-label" id="mlsListprice"></label>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+<label for="rental_index" class="control-label" id="mlsRentalindex"></label>
+</div>
+
+</div>
+<div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
+<button class="btn buttns-searchdeals pull-right" type="button" style="font-size:14px !important; max-width:112px !important;" onclick="backToSearch()"><i class="fa fa-edit" aria-hidden="true"></i> Change search</button>
+<button class="btn buttns-searchdeals pull-right" type="button" value="Saveas" id="newsearch_saveas_result" data-toggle="modal" data-target="#saveasModal" style="font-size:14px !important; max-width:112px !important;"><i class="fa fa-save" aria-hidden="true"></i> Save search</button>
+</div>
+</div>
+</div>
+
+<div class="base1">
+<div class="material-switch col-sm-6 col-lg-6 col-xs-6 col-md-6">
+<input id="toggleMap" name="toggleMap" type="checkbox" />
+<label for="toggleMap" class="label-default"></label><p class="maptext">Map</p>
+</div>
+<div class="col-sm-6 col-lg-6 col-xs-6 col-md-6">
+<button class="btn buttns-dwnlddeals pull-right" type="button" onClick="downloadFile();"><i class="fa fa-download" aria-hidden="true"></i> Download deals</button>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12" id="mapView" style="display: none;padding-left: 0px !important;padding-right: 0px !important;">
+<div class="base2">
+<div class="col-sm-12 col-lg-12 col-xs-12 col-md-12">
+<div class="form-group">
+<label class="label-legend">Legend</label>
+<label class="label-legend_stat"><i class="fa fa-circle" aria-hidden="true" style="color:#afe313"></i> Active</label>
+<label class="label-legend_stat"><i class="fa fa-circle" aria-hidden="true" style="color:#8b72be"></i> Active Option Contract</label>
+<label class="label-legend_stat"><i class="fa fa-circle" aria-hidden="true" style="color:#7fd1db"></i> Active Contingent</label>
+<label class="label-legend_stat"><i class="fa fa-circle" aria-hidden="true" style="color:#f7468a"></i> Active Kick Out</label>
+<label class="label-legend_stat"><i class="fa fa-circle" aria-hidden="true" style="color:#e12c2c"></i> Pending</label>
+</div>
+</div>
+</div>
+<div id="Map" class="col-xs-12 col-sm-12 col-lg-8 col-md-7 Base-details-left"></div>
+
+<div id="details-mapAddress" class="col-xs-12 col-sm-12 col-lg-4 col-md-5 Base-details-right">
+<div class="row thumbnail" style="border: 0">
+<button class="close" style="opacity: 1; margin-right: 8px" id='close' onclick='this.parentNode.parentNode.parentNode.hide(); return false;'><i class="fa fa-close mapinfoclose" aria-hidden="true"></i></button>
+<span class="mapnumberCircle" id="mapIndex"></span>
+<img src="" id="mapinfo-img" class="mapinfo-img" style="margin-top: 32px;max-height:180px;" width="360" onerror="this.src='http://via.placeholder.com/340x180/999999?text=No+image+preview';">
+<div class="caption">
+<b><span id="mapaddress" style="text-align: left"></span></b>
+<p style="font-size: 14px;margin-bottom: 30px;text-align: left">List price: <span id="maplistprice"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Est. price: <span id="mapestprice"></span></p>
+<div class="media" align="left">
+<div class="media-body">
+<p style="font-size: 14px;">Discount %: <span id="mapdiscount_percent"></span><br />Gross discount: <span id="mapestim_gross_disc"></span><br />&nbsp;<br />Rental Index™: <span id="maprental_index"></span><br /> Est. monthly lease: <span id="mapestim_monthly_lease"></span>
+</p>
+</div>
+</div>
+</div>
+<div class="row" style="margin-top: 22px;" id="mapdivButtons">
+</div>
+</div>
+</div>
+</div>
+<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<hr style="border:5px solid #ffffff;background-color: #fff;">
+</div>
+
+<div class="row col-xs-12 col-sm-12 col-md-6 col-lg-6" id="mlsDeals_Tabs">
+<div class="list-group segmented-control-searchResult" align="left" id="list_grid_photos">
+<a href="#list_mlsDeals" id="list_mls" rel="list" class="list-group-item active" style="padding-left:30px;text-align: center;">
+<i class="fa fa-list" aria-hidden="true"></i> List
+</a>
+<a href="#grid_mlsDeals" id="grid_mls" rel="grid" class="list-group-item" style="text-align: center;">
+<i class="fa fa-th" aria-hidden="true"></i> Grid
+</a>
+<a href="#photos_mlsDeals" id="photos_mls" rel="photos" class="list-group-item" style="text-align: center;">
+<i class="fa fa-photo" aria-hidden="true"></i> Photo
+</a>
+</div>
+</div>
+
+<div class="mlsDeals_Contents col-xs-12 col-sm-12 col-md-12 col-lg-12" id='list_mlsDeals'>
+<div class="row">
+<table id="mlsSearchTable" class="table display tableAnalytics" width="100%">
+<thead>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="mlsDeals_Contents col-xs-12 col-sm-12 col-md-12 col-lg-12" id='grid_mlsDeals' style='display:none'>
+<div class="row" id="gridthumbnails"></div>
+</div>
+
+<div class="mlsDeals_Contents col-xs-12 col-sm-12 col-md-12 col-lg-12" id='photos_mlsDeals' style='display:none'>
+<div class="row" id="photosthumbnails"></div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="runcmaModal" role="dialog">
+<div class="" data-notification-status="" id="errorfastCMA"></div>
+<div class="modal-dialog">
+<div class="modal-content" style="background-color: #f0f0f0;">
+<div class="row modal-body" style="margin: 10px">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity:1;"><i class="fa fa-close" aria-hidden="true"></i></button>
+<div class="row col-sm-12 col-lg-12 col-md-12 col-xs-12">
+<div class="Details-popup hideOnCma" id="cmaTitle">Run CMA</div>
+<div class="Details-popup showOnCma" id="cmaTitleEdit">Edit CMA criteria</div>
+<div class="form-group hideOnCma">
+<label class="radio-form radio-spacing"><b>ARV - Distance</b>
+<input type="radio" name="runcma" id="ARV" checked="checked" value="ARV">
+<span class="checkmark-radio"></span>
+</label>
+<label class="radio-form radio-spacing"><b>ARV - Subdivision</b>
+<input type="radio" name="runcma" id="FMV" value="FMV">
+<span class="checkmark-radio"></span>
+</label>
+<label class="radio-form radio-spacing"><b>Custom</b>
+<input type="radio" name="runcma" id="customCMA" value="custom_runcma">
+<span class="checkmark-radio"></span>
+</label>
+</div>
+<form class="form col-md-12" id="editCMA">
+
+<div class="row runcmaPopup" id="runcmaPopupARV">
+<div class="form-group" style="text-align: justify; text-justify: inter-word;">
+<p style="font-size: 14px;color: #999999">Run a CMA based on the ARV - Distance. (This will choose comps with priority on Recency and Distance).</p>
+</div>
+<button type="submit" class="form-control btn search-button pull-right" style="margin-top: 20px;" onclick="avmFun(1, event,1)">
+<span id="runCMAarv">RUN CMA</span>
+<span id="runCMAarvspin" class="fa fa-refresh fa-spin"></span>
+</button>
+
+</div>
+
+<div class="row runcmaPopup" id="runcmaPopupFMV" style="display: none;">
+<div class="form-group" style="text-align: justify; text-justify: inter-word;">
+<p style="font-size: 14px;color: #999999">Run a CMA based on the ARV - Subdivision (this will choose comps with priority on Subdivision).</p>
+</div>
+<button type="submit" class="form-control btn search-button pull-right" style="margin-top: 20px;" onclick="avmFun(2, event,1)">
+<span id="runCMAfmv">RUN CMA</span>
+<span id="runCMAfmvspin" class="fa fa-refresh fa-spin"></span>
+</button>
+
+</div>
+
+<div class="row runcmaPopup" id="runcmaPopupcustom_runcma" style="display: none;">
+<div class="form-group" style="text-align: justify; text-justify: inter-word;">
+<p style="font-size: 14px;color: #999999">Run a CMA with custom criteria using FastCMA.
+</p>
+</div>
+<div class="row col-xs-12 col-sm-12 col-lg-12 col-md-12"><hr style="border:1px solid #999999;background-color: #999999;"></div>
+<div class="row col-xs-12 col-sm-12 col-lg-12 col-md-12" style="padding-left: 0px;">
+<div class="col-sm-12">
+<label class="control-label" style="display: inline-block;">
+<span class="numberCircle">1</span>
+<h5 class="lookup-tab"><b>Find Comparables</b></h5></label>
+</label>
+</div>
+<div class="col-sm-12">
+<label class="control-label">
+<h5 style="color: #323232; float: left;"><b>Property Information</b></h5></label>
+</label>
+</div>
+<div class="col-sm-3" style="display:block;">
+<div class="form-group">
+<label for="property_type" class="control-label property">Property type</label>
+<select name="prop_type_select" data-type="editCMA" data-index="1" id="prop_type_select" tabindex="2" class="prop_type_select form-control"></select>
+</div>
+</div>
+<div class="form-group" id="prop_subtype"></div>
+<div class="col-sm-3" id="ybDiv">
+<div class="form-group">
+<label for="year_build" class="control-label property">Year built</label>
+<input type="text" name="year_build" id="prop_year_build" tabindex="1" class="form-control" />
+<input type="hidden" name="address" id="address" value="">
+<input type="hidden" name="street_number" id="street_number" value="">
+<input type="hidden" name="route" id="route" value="">
+<input type="hidden" name="city" id="city" value="">
+<input type="hidden" name="state" id="state" value="">
+<input type="hidden" name="zipcode" id="zipcode" value="">
+<input type="hidden" name="lat" id="lat" value="">
+<input type="hidden" name="lon" id="lon" value="">
+</div>
+</div>
+<div class="col-sm-3" id="sqftDiv">
+<div class="form-group">
+<label for="square_feet" class="control-label property">Square feet</label>
+<input type="text" name="square_feet" id="prop_square_feet_fastcma" tabindex="1" class="form-control" />
+</div>
+</div>
+<div class="col-sm-3" id="acreDiv" style="display: none;">
+<div class="form-group">
+<label for="acre" class="control-label property">Acre</label>
+<input type="text" name="acre" id="prop_acre_fastcma" tabindex="1" class="form-control" />
+</div>
+</div>
+</div>
+<div class="row col-xs-12 col-sm-12 col-lg-12 col-md-12" style="padding-left: 0px;">
+<div class="col-sm-3" id="recencyDiv">
+<div class="form-group">
+<span class="popuptxt property" href="#popup">Recency (days)
+<sup class="tooltip"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext">Number of days to find Sold/Leased properties from CMA date. Minimum value can be 0 days and maximum can be 1080 days. If it is 0, it will show all properties.</span></sup>
+</span>
+<input type="number" name="recency" id="recency" tabindex="1" class="form-control" value="180" max="360" min="0" step="30" />
+<br />
+<input type="range" min=0 max=360 value=180 step=30 name="recencyslider" id="recencyslider" />
+</div>
+</div>
+<div class="col-sm-3" id="distDiv">
+<div class="form-group">
+<span class="popuptxt property" href="#popup">Distance range +/-(miles)
+<sup class="tooltip"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext">Distance is in miles. Maximum distance is 10 miles, minimum distance 0 of a mile. If it is 0, it will show all properties.</span></sup>
+</span>
+<input type="number" name="distance" id="distance" tabindex="2" class="form-control" value="0.25" max="10" min="0" step="0.25">
+<br />
+<input type="range" min=0 max=1 step=0.25 value=0.25 name="distanceslider" id="distanceslider">
+</div>
+</div>
+<div class="col-sm-3" id="yrbltDiv">
+<div class="form-group">
+<span class="popuptxt property" href="#popup">Year built range +/-(years)
+<sup class="tooltip"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext">Year Built +-. If the property was built in 2000 and you have 10+-, it means the system will find comparables between 1990 and 2010. Maximum is 200 years. If it is 0, it will show all properties.</span></sup>
+</span>
+<input type="number" name="year_build_range" id="year_build_range" tabindex="2" class="form-control" value="10" max="200" min="0" step="5">
+<br />
+<input type="range" min=0 max=50 step=5 value=10 name="year_build_rangeslider" id="year_build_rangeslider">
+</div>
+</div>
+<div class="col-sm-3" id="sqftrangeDiv">
+<div class="form-group">
+<span class="popuptxt property" href="#popup">Square feet range (%)
+<sup class="tooltip"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="tooltiptext">Square Feet percentage. For example if it is 1000 sf and you have 20%. The system will search houses between 800 sf and 1,200 sf. Minimum is 0 maximum is 100%. If it is 0%, it will show all properties.</span></sup>
+</span>
+<input type="number" name="sqft_perc" id="sqft_perc" tabindex="2" class="form-control" value="20" max="100" min="0">
+<br />
+<input type="range" min=0 max=50 step=1 value=20 name="sqft_percslider" id="sqft_percslider">
+</div>
+</div>
+<div class="col-sm-3" id="acrerangeDiv" style="display: none;">
+<div class="form-group">
+<span class="popuptxt property" href="#popup">Acre range +/-(acres)</span>
+<input type="number" name="acreRange" id="acreRange" tabindex="1" class="form-control" value="20" max="100" min="0" step="1" />
+<br />
+<input type="range" min=0 max=100 value=100 step=1 name="acresrangeslider" id="acresrangeslider" />
+</div>
+</div>
+<div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+<div class="form-group">
+<input class="form-control btn pull-left delete-button" type="button" value="RESET" onclick="this.form.reset()" />
+<button class="form-control btn pull-right search-button" type="button" value="2" name="findComparables" id="count-cma">
+<span id="runCMAcustom">FIND COMPARABLES</span>
+<span id="runCMAcustomspin" class="fa fa-refresh fa-spin"></span>
+</button>
+</div>
+</div>
+<div style="margin-top: 20px;" id="large_area_err"></div>
+</div>
+
+<div class="row col-xs-12 col-sm-12 col-lg-12 col-md-12" id='run_cma_block' style="display: none;">
+<hr style="border:1px solid #999999;background-color: #999999;">
+<div class="row col-xs-12 col-sm-12 col-lg-12 col-md-12">
+<label class="control-label">
+<span class="numberCircle">2</span>
+<h5 class="lookup-tab"><b>Run CMA</b></h5></label>
+</label>
+<div id="comp_count_msg_fastcma">
+<div class="row col-sm-12">
+<label class="control-label">
+<h5><b>Comparables found</b></h5>
+</label>
+</div>
+<div class="row col-sm-12 col-lg-8 col-md-8 col-xs-12">
+<table border="0" style="width:100%;">
+<thead>
+<tr align="center">
+<td class="comp_count_data_th">Sold</td>
+<td class="comp_count_data_th">Active</td>
+<td class="comp_count_data_th">Non-Active</td>
+<td class="comp_count_data_th" style="border-right:0">Leased</td>
+</tr>
+</thead>
+<tbody align="center">
+<tr align="center">
+<td class="comp_count_data_td" id="sold_count"></td>
+<td class="comp_count_data_td" id="act_count"></td>
+<td class="comp_count_data_td" id="nonact_count"></td>
+<td class="comp_count_data_td" style="border-right:0" id="lease_count"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12" id="avm" style="margin-top: 23px;"></div>
+<div class="col-sm-12 col-lg-12 col-md-12 col-xs-12" id="customBtn">
+<div class="form-group">
+<button class="form-control btn search-button pull-right" onclick="renderAVM(3)" type="button" tabindex="4" style="margin-top: 17px;background-color: #fcce01;">RUN CMA</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="modal fade" tabindex="-1" id="avmMapPopup">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<button type="button" class="close" onclick="closeiconPopup();" data-dismiss="modal" aria-label="Close" style="opacity:1;"><i class="fa fa-close mapinfoclose" aria-hidden="true"></i></button>
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+
+<div id="avm_soldcma" class="col-xs-12 col-sm-12 col-lg-4 col-md-4 avm_soldcma_map">
+<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="margin-left:-10px;">
+<label style="padding-top: 25px; font-size: 14px;" id="selectedCMA_map"></label>
+<label class="pull-right" style="padding-top: 25px;" id="sold_cma_count_map"></label>
+<hr style="margin-top: 0px; width: 100%;">
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_1" id="sold_price_selected_map"></span>
+<br />
+<span class="cma_layer_list_1" id="avmselectedPrice_map"></span>
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_1" id="sold_pricesqft_selected_map"></span>
+<br />
+<span class="cma_layer_list_1" id="avmselectedPpsq_map"></span>
+</div>
+</div>
+
+<div id="avm_active_leased" class="col-xs-12 col-sm-12 col-lg-4 col-md-4 avm_active_leased_map">
+<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="margin-left:-10px;">
+<label style="padding-top: 25px; font-size: 14px;" id="unselectedCMA_map"></label>
+<label class="pull-right" style="padding-top: 25px;" id="active_cma_count_map"></label>
+<hr style="margin-top: 0px; width: 100%;">
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_2" id="active_price_selected_map"></span>
+<br />
+<span class="cma_layer_list_2" id="avmunselectedPrice_map"></span>
+</div>
+ <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_2" id="active_pricesqft_selected_map"></span>
+<br />
+<span class="cma_layer_list_2" id="avmunselectedPpsq_map"></span>
+</div>
+</div>
+
+<div id="avm_active_leased" class="col-xs-12 col-sm-12 col-lg-4 col-md-4 avm_active_leased_map">
+<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="margin-left:-10px;">
+<label style="padding-top: 25px; font-size: 14px;" id="unselectedleasedCMA_map"></label>
+<label class="pull-right" style="padding-top: 25px;" id="leased_cma_count_map"></label>
+<hr style="margin-top: 0px; width: 100%;">
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_2" id="leased_monlease_map"></span>
+<br />
+<span class="cma_layer_list_2" id="unselectedleasedML_map"></span>
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_2" id="leased_Ri_map"></span>
+<br />
+<span class="cma_layer_list_2" id="unselectedleasedRI_map"></span>
+</div>
+</div>
+
+<div id="avm_map_popup" class="col-xs-12 col-sm-12 col-lg-12 col-md-12 avm_map_popup"></div>
+
+<div id="iconMapPopup" class="col-xs-5 col-sm-5 col-lg-4 col-md-4 iconMapPopup">
+<div class="row thumbnail" id="popupRowThumb" style="background-color: #999999; border: 0">
+<div id="selectedPopup" class="pull-left" style="color: #fff; margin-top:10px; "><i class="fa fa-check"></i> Selected</div>
+<button class="close" style="opacity: 1; margin-right: 8px" id='close' onclick="closeiconPopup();" return false;'><i style="padding-top: 10px;" class="fa fa-close mapinfoclose" aria-hidden="true"></i></button>
+<img src="" id="popup-img" class="mapinfo-img" style="margin-top: 32px;max-height:180px;" width="360" onerror="this.src='http://via.placeholder.com/340x180/cccccc?text=No+image+preview';">
+<div class="caption" style="color: #ffffff;">
+<label class="control-label"><span class="numberCircle" id="rankProp"></span>&nbsp;<b><span id="popupaddress"></span></b></label><br />
+<label class="control-label popupText" id="priceText"></label>: <span id="popupSoldPrice"></span><br />
+<label class="control-label popupText">Price per square foot: <span id="popuppricepersqft"></span></label><br /><br />
+<label class="control-label popupText">Year built: <span id="popupYearBuilt"></span></label><br />
+<label class="control-label popupText">Square feet: <span id="popupSquareFeet"></span></label><br />
+<label class="control-label popupText">Bed/bath: <span id="popupBed"></span> / <span id="popupBath"></span></label><br />
+<label class="control-label popupText">Lot Size (acres): <span id="popupLotSize"></span></label>
+</div>
+<div class="row">
+<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 text-center">
+<button class="btn button-thumbnail_popup" type="button" id="compBtn" value='' onclick="compSelectUnselect(this,true,true);">SELECT COMP</button>
+<button class="btn button-thumbnail_popup" type="button" id="compBtnUnselect" value='' onclick="compSelectUnselect(this,true,false);">UNSELECT COMP</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="sliderModal">
+<div class="modal-dialog">
+<div class="modal-content" style="background-color: #123963;">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: 2px; margin-right:10%;opacity: 5;"><i class="fa fa-close mapinfoclose" aria-hidden="true"></i></button>
+<div id='ninja-slider'>
+<div class="container">
+<label class="control-label">
+<span class="numberCircle" id="sliderPhotosrank"></span>
+<h5 class="lookup-tab" id="sliderPhotosaddress" style="color: #fff;"></h5></label>
+</label>
+<div class="slider-inner">
+<ul id="sliderUl">
+</ul>
+<div class="fs-icon" title="Expand/Close"></div>
+</div>
+<div id="thumbnail-slider">
+<div class="inner">
+<ul id="thumbsliderUl"></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="saveasModal" role="dialog">
+<div class="" data-notification-status="" id="showAlert"></div>
+<div class="modal-dialog">
+<div class="modal-content" style="background-color: #f0f0f0;">
+<div class="modal-body" style="margin: 10px">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity:1;"><i class="fa fa-close" aria-hidden="true"></i></button>
+<div class="Details-popup">Save as</div>
+<div class="row" style="font-size: 14px;">
+<div class="form-group">
+<form class="form col-md-12">
+<label class="radio-form radio-spacing">Saved search
+<input type="radio" name="search_type" id="savedSearch" checked="checked" value="saved_Search">
+<span class="checkmark-radio"></span>
+</label>
+<label class="radio-form radio-spacing">Automated search
+<input type="radio" name="search_type" id="automatedSearch" value="automated_Search">
+<span class="checkmark-radio"></span>
+</label>
+</form>
+</div>
+<form class="form col-md-12" id="saveNewsearches" name="saveNewsearches">
+
+<div class="popupsearch" id="popupsearchsaved_Search">
+<div class="form-group">
+<label class="subtitle">Name<sup>*</sup></label>
+<input type= text id="searchName" name="searchName" class="search_name form-control" required />
+</div>
+<div id="success-msg-search"></div>
+<div id="error-msg-search"></div>
+<button class="form-control btn search-button pull-right" style="margin-top:20px;" onclick="saveSearches(event,2)">
+<span id="savesearchMls">SAVE</span>
+<span id="savesearchMlsspin" class="fa fa-refresh fa-spin" style="display: none;"></span>
+</button>
+</div>
+
+<div class="popupsearch" id="popupsearchautomated_Search" style="display: none;">
+<div class="form-group" style="text-align: justify; text-justify: inter-word;">
+<p style="font-size: 14px; font-style: LatoWeb;">Send automated reports by email as soon as deals are listed on the market. Reports are created when there are new properties on the marketplace or any properties with price changes that meet your search criteria.<br /><br />
+Note: Last updated timeframe is not saved since automated reports are sent as soon as deals are listed on the market.
+</p>
+<label class="subtitle">Name<sup>*</sup></label>
+<input type= text id="searchNameAuto" name="searchName" class="search_name form-control" required />
+</div>
+<div id="success-msg-search-automated"></div>
+<div id="error-msg-search-automated"></div>
+<button class="form-control btn search-button pull-right" style="margin-top:20px;" onclick="saveSearches(event,1)">
+<span id="savesearchMls_auto">SAVE</span>
+<span id="savesearchMlsspin_auto" class="fa fa-refresh fa-spin" style="display: none;"></span>
+</button>
+</div>
+</form>
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="modal fade" tabindex="-1" id="detailsModal" role="dialog">
+<div class="modal-dialog modal-lg modal-sm modal-md modal-xs">
+<div class="modal-content" style="background-color: #f0f0f0;">
+<div class="modal-body" style="margin: 10px">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity:1;"><i class="fa fa-close" aria-hidden="true"></i></button>
+<div class="Details-popup" id="address"></div>
+
+<div class="row">
+<form class="col-md-12">
+<div class="Valuation">Valuations</div>
+</form>
+<form class="col-md-4" style="font-size: 14px;">
+<div class="media" style="margin-bottom: 5px;">
+<div class="media-left media-middle">
+<img src="" class="modal-pic" width="100" height="100" onError="this.src='http://via.placeholder.com/100x100/999999';">
+</div>
+<div class="media-body">
+<p style="font-size: 14px;">
+Discount Index™: <span id="discount_per"></span><br />
+Gross discount: <span id="gross_discount"></span><br />
+&nbsp;<br />
+Rental Index™: <span id="rental_index"></span><br />
+Est. monthly lease: <span id="est_monthlylease"></span>
+</p>
+</div>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label>List price: <span id="list_price"> </span></label><br />
+<label>Est. price: <span id="estprice"> </span></label><br />
+<label>List price per square foot: <span id="listpricepersqft"> </span></label><br />
+<label>Est. price per square foot: <span id="estpricepersqft"> </span></label>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label>Original list price: <span id="original_list_price"> </span></label><br />
+<label>List price to original list price: <span id="listprice_to_originallistprice"> </span></label><br />
+<label>List date: <span id="listdate" class="listDate"> </span></label>
+</div>
+</form>
+<div class="col-sm-12"><hr style="border:1px solid #999999;background-color: #999999;"></div>
+
+<form class="form col-md-12">
+<div class="Valuation">Property</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label><span id="bed"> </span> bed / <span id="bath"> </span> bath / <span id="garage"> </span> garage / <span id="carport"> </span> carport</label><br />
+<label>Pool: <span id="pool"> </span></label><br />
+<label>Fireplace: <span id="fireplace"> </span></label><br />
+<label>Stories: <span id="storie"> </span></label>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label>Property type: <span id="prop_type"> </span></label><br />
+<label>House type: <span id="house_type"> </span></label><br />
+<label>Year built: <span id="year_built"> </span></label><br />
+<label>Square feet: <span id="square_feet"> </span></label>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label>Acre: <span id="acre"> </span></label><br />
+<label>Construction: <span class="wordBreak" id="constructions"> </span></label><br />
+<label>Roof: <span class="wordBreak" id="roof"> </span></label><br />
+<label>Foundation: <span class="wordBreak" id="foundation"> </span></label>
+<label>Seller type: <span class="wordBreak" id="seller_type"> </span></label>
+</div>
+</form>
+<div class="col-sm-12"><hr style="border:1px solid #999999;background-color: #999999;"></div>
+
+<form class="form col-md-4">
+<div class="Valuation">Subdivision and schools</div>
+<div class="form-group" style="font-size: 14px;">
+<label>Subdivision: <span id="subdivision"> </span></label><br />
+<label>HOA Frequency/dues: <span id="hqa_frequency_dues"> </span></label><br />
+&nbsp;<br />
+<label>School District: <span id="school_district"> </span></label><br />
+<label>Elementary school: <span id="elementary_schoolname"> </span></label><br />
+<label>Middle school: <span id="middle_schoolname"> </span></label><br />
+<label>High school: <span id="high_schoolname"> </span></label>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="Valuation">MLS</div>
+<div class="form-group">
+<label>MLS number: <span id="detail_mls_number"> </span></label><br />
+<label>Status: <span id="status"> </span></label><br />
+<label>Status change: <span id="statuschange"> </span></label><br />
+<label>Days on market: <span id="dayonmarket"> </span></label><br />
+<label>Agent Name: <span id="agentName"></span></label><br />
+<label>Agent Phone Number: <span id="agentPhone"></span></label><br />
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="Valuation">CMA</div>
+<div class="form-group">
+
+<label>CMA date: <span id="cmadates"> </span></label>
+</div>
+</form>
+<div class="col-sm-12"><hr style="border:1px solid #999999;background-color: #999999;"></div>
+
+<form class="form col-sm-12">
+<div class="Valuation">Public remark</div>
+<div class="form-group" style="font-size: 14px;">
+<label id="publicremarks"></label>
+</div>
+</form>
+</div>
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="modal fade" tabindex="-1" id="detailsModalRuncma" role="dialog">
+<div class="modal-dialog modal-lg modal-sm modal-md modal-xs">
+<div class="modal-content" style="background-color: #f0f0f0;">
+<div class="modal-body" style="margin: 10px">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity:1;"><i class="fa fa-close" aria-hidden="true"></i></button>
+<div class="Details-popup popupAddr" id="address"></div>
+
+<div class="row">
+<form class="col-md-12">
+<div class="Valuation">Valuations</div>
+</form>
+<form class="col-md-4" style="font-size: 14px;">
+<div class="media" style="margin-bottom: 5px;">
+<div class="media-left media-middle">
+<img src="" class="modal-pic" width="100" height="100" onError="this.src='http://via.placeholder.com/100x100/999999';">
+</div>
+<div class="media-body">
+<p style="font-size: 14px;">
+Discount Index™: <span id="discount_per"></span><br />
+Gross discount: <span id="gross_discount"></span><br />
+&nbsp;<br />
+Rental Index™: <span id="rental_index"></span><br />
+Est. monthly lease: <span id="est_monthlylease"></span>
+</p>
+</div>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label>List price: <span id="list_price"> </span></label><br />
+<label>Est. price: <span id="estprice"> </span></label><br />
+<label>List price per square foot: <span id="listpricepersqft"> </span></label><br />
+<label>Est. price per square foot: <span id="estpricepersqft"> </span></label>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label>Original list price: <span id="original_list_price"> </span></label><br />
+<label>List price to original list price: <span id="listprice_to_originallistprice"> </span></label><br />
+<label>List date: <span id="listdate" class="listDate"> </span></label>
+</div>
+</form>
+<div class="col-sm-12"><hr style="border:1px solid #999999;background-color: #999999;"></div>
+
+<form class="form col-md-12">
+<div class="Valuation">Property</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label><span id="bed"> </span> bed / <span id="bath"> </span> bath / <span id="garage"> </span> garage / <span id="carport"> </span> carport</label><br />
+<label>Pool: <span id="pool"> </span></label><br />
+<label>Fireplace: <span id="fireplace"> </span></label><br />
+<label>Stories: <span id="storie"> </span></label>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label>Property type: <span id="prop_type"> </span></label><br />
+<label>House type: <span id="house_type"> </span></label><br />
+<label>Year built: <span id="year_built"> </span></label><br />
+<label>Square feet: <span id="square_feet"> </span></label>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="form-group">
+<label>Acre: <span id="acre"> </span></label><br />
+<label>Construction: <span class="wordBreak" id="constructions"> </span></label><br />
+<label>Roof: <span class="wordBreak" id="roof"> </span></label><br />
+<label>Foundation: <span class="wordBreak" id="foundation"> </span></label>
+<label>Seller type: <span class="wordBreak" id="seller_type"> </span></label>
+</div>
+</form>
+<div class="col-sm-12"><hr style="border:1px solid #999999;background-color: #999999;"></div>
+
+<form class="form col-md-4">
+<div class="Valuation">Subdivision and schools</div>
+<div class="form-group" style="font-size: 14px;">
+<label>Subdivision: <span id="subdivision"> </span></label><br />
+<label>HOA Frequency/dues: <span id="hqa_frequency_dues"> </span></label><br />
+&nbsp;<br />
+<label>School District: <span id="school_district"> </span></label><br />
+<label>Elementary school: <span id="elementary_schoolname"> </span></label><br />
+<label>Middle school: <span id="middle_schoolname"> </span></label><br />
+<label>High school: <span id="high_schoolname"> </span></label>
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="Valuation">MLS</div>
+<div class="form-group">
+<label>MLS number: <span id="detail_mls_number"> </span></label><br />
+<label>Status: <span id="status"> </span></label><br />
+<label>Status change: <span id="statuschange"> </span></label><br />
+<label>Days on market: <span id="dayonmarket"> </span></label><br />
+<label>Agent Name: <span id="agentName"></span></label><br />
+<label>Agent Phone Number: <span id="agentPhone"></span></label><br />
+</div>
+</form>
+<form class="form col-md-4" style="font-size: 14px;">
+<div class="Valuation">CMA</div>
+<div class="form-group">
+
+<label>CMA date: <span id="cmadates"> </span></label>
+</div>
+</form>
+<div class="col-sm-12"><hr style="border:1px solid #999999;background-color: #999999;"></div>
+
+<form class="form col-sm-12">
+<div class="Valuation">Public remark</div>
+<div class="form-group" style="font-size: 14px;">
+<label id="publicremarks"></label>
+</div>
+</form>
+</div>
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="modal fade" id="share_report" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-lg">
+<div class="modal-content" style="background-color: #f0f0f0">
+<div class="modal-body" style="margin: 10px">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close" aria-hidden="true"></i></button>
+<h1 class="modal-title dwndList">Share investment report</h1>
+<div id="address_popup"></div>
+<form style="padding: 0 39px 0 39px;" id="myEmail">
+<div class="form-group Select-contacts" style="margin-top: 20px;">Add Email Address (optional)</div>
+<label class="email_info">Email addresses entered here will not be saved to your contact list</label>
+<div class="email-list-box" align="center">
+<textarea name="addEmail" rows="9" placeholder="Enter email addresses, separated by comma." style="padding:10px;overflow-x:hidden; min-width: 100%; max-height:63px;border-radius: 6px;"></textarea>
+</div>
+<p><b>If you don't see the email in your Inbox, please look at your spam or filters. You may need to whitelist 'realestateiq.me' to get emails from us.</b></p>
+
+<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12" style="margin-top: 20px; display: none;">
+<label class="header-section-checkbox-form" style="font-size: 14px !important;">Attach PDF report to email
+<input type="checkbox" value="attach_pdf" name="attach_pdf">
+<span class="checkmark-form"></span>
+</label>
+</div>
+<div class="col-sm-12 col-lg-12 col-md-12 col-xs-12" align="center">
+
+<button type="submit" class="form-control btn btn_sendemail center" id="btn_sendemail">
+<span id="sendEmail">SEND EMAIL</span>
+<span id="sendEmailspin" class="fa fa-refresh fa-spin"></span>
+</button>
+<div class="row col-sm-12 col-lg-12 col-md-12 col-xs-12">
+<span id="emailerrorMessage" style="color: #359946 !important;" class="pull-left"></span>
+</div>
+</div>
+<div class="form-group Select-contacts">&nbsp;&nbsp;</div>
+</form>
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="container" style="display: none" id="avm_Result">
+<div class="row">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+<div class="fastcma" id="cmaHeader"></div>
+</div>
+</div>
+
+<div class="base_avm" id="base_avm">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12" style="padding-left: 5px; color: #ffffff; padding-top: 8px;">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+<label class="control-label">
+<h5 style="font-size: 16px;"><i class="fa fa-star" aria-hidden="true"></i><span id="avm_address"></span></h5>
+</label>
+</div>
+
+<div class="col-sm-10 col-md-10 col-lg-10 col-xs-12">
+<div class="media-left media-middle">
+<img src="" alt="no photo" width="80" height="70" border="none" id="avm_src" onError="this.src='http://via.placeholder.com/80x70/cccccc';" />
+</div>
+<div class="media-body">
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">Year built: <span id="avm_yearBuilt"></span></div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">Property type: <span id="avm_propType"></span></div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">&nbsp;</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">Square feet: <span id="avm_squareFeet"></span></div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">House type: <span id="avm_houseType"></span></div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">&nbsp;</div>
+ <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">Lot size(acres): <span id="avm_lotSize"></span></div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">Subdivision: <span id="avm_subdivision"></span></div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">&nbsp;</div>
+<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12"><a href="#detailsModalRuncma" data-toggle="modal" style="color: #ffffff;text-decoration: underline;cursor: pointer;">Details</a>
+</div>
+</div>
+</div>
+
+<div class="col-sm-12 col-md-2 col-lg-2 col-xs-12">
+<button class="btn buttns-searchdeals deal_cma pull-left" type="button" onclick="editCmaCriteria()"><i class="fa fa-edit" aria-hidden="true"></i> Edit CMA criteria
+</button>
+
+<button type="submit" class="btn buttns-searchdeals deal_cma pull-left" onclick="generateReport()"><i class="fa fa-share-alt" aria-hidden="true"></i> Report & share</button>
+<input type="hidden" name="CmaId" value="" />
+</div>
+</div>
+</div>
+
+<div class="base_avm1">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-left:5px;margin-top: 20px;">
+<div class="list-group segmented-control" align="left" id="estim_invest_tabs">
+<a href="#est_val" id="est_val" class="list-group-item active" align="center" style="padding-left:4%; padding-right: 4%;">
+ESTIMATED VALUE
+</a>
+<a href="#invst_summary" id="invst_summary" class="list-group-item" align="center" style="padding-left:2.5%; padding-right: 2.5%;">
+INVESTMENT SUMMARY
+</a>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+<span class="cma_layer" id="avm_estPrice"></span><br />
+<span class="cma_layer_list">Estimated price</span>
+</div>
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+<span class="cma_layer" id="avm_estMonthLease"></span><br />
+<span class="cma_layer_list">Monthly lease</span>
+</div>
+<div class="estim_invest_Contents col-xs-12 col-sm-2 col-md-2 col-lg-2" style="display: none;">
+<span class="cma_layer">
+<input type="text" id="avm_asking_price" name="asking_price" class="form-control" value="" style="height: 36px !important; font-size: 26px !important" maxlength="10" />
+</span>
+<span class="cma_layer_list">Asking/offer price</span>
+</div>
+<div class="estim_invest_Contents col-xs-12 col-sm-2 col-md-2 col-lg-2" style="display: none;">
+<span class="cma_layer" id="avm_EstGrossDiscount"></span><br />
+<span class="cma_layer_list">IQ Discount™</span>
+</div>
+<div class="estim_invest_Contents col-xs-12 col-sm-2 col-md-2 col-lg-2" style="display: none;">
+<span class="cma_layer" id="avm_soldEstPercentDiscount"></span><br />
+<span class="cma_layer_list">IQ Discount %™</span>
+</div>
+<div class="estim_invest_Contents col-xs-12 col-sm-2 col-md-2 col-lg-2" style="display: none;">
+<span class="cma_layer" id="avm_rentalIndex"></span><br />
+<span class="cma_layer_list">Rental Index™</span>
+</div>
+</div>
+</div>
+
+<div id="searchTabs" style="margin-top: 30px;">
+<div class="list-group segmented-control_avm" style="margin-bottom: 0px;">
+<input type="submit" onclick="avmDataByType(1)" class="list-group-item dDbtn active" align="center" value="" id="sold_prop" />
+<input type="submit" onclick="avmDataByType(2)" class="list-group-item dDbtn" align="center" value="" id="active_prop" />
+<input type="submit" onclick="avmDataByType(3)" class="list-group-item dDbtn" align="center" value="" id="leased_prop" />
+<input type="submit" onclick="avmDataByType(4)" class="list-group-item dDbtn" align="center" value="" id="nonactive_prop" />
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 stab_content" id="sold_prop" style=" padding-left:0;display: inline-block;">
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+
+<div id="avm_map" class="col-xs-12 col-sm-12 col-lg-4 col-md-12 avm_map" data-toggle="modal" data-target="#avmMapPopup">
+<div id="mapDiv" class="row"></div>
+</div>
+
+<div id="avm_soldcma" class="col-xs-12 col-sm-12 col-lg-4 col-md-6 avm_soldcma">
+<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="margin-left:-10px;">
+<label style="padding-top: 25px; font-size: 14px;" id="selectedCMA">Sold CMA</label>
+<label class="pull-right" style="padding-top: 25px;" id="sold_cma_count"></label>
+<hr style="margin-top: 0px; width: 100%;">
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_1" id="sold_price_selected"></span>
+<br />
+<span class="cma_layer_list_1" id="avmselectedPrice">Sold price</span>
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_1" id="sold_pricesqft_selected"></span>
+<br />
+<span class="cma_layer_list_1" id="avmselectedPpsq">Price per square foot</span>
+</div>
+<div class="material-switch_avm col-sm-6 col-lg-6 col-xs-6 col-md-6">
+<input id="toggleStats" name="toggleStats" type="checkbox" />
+<label for="toggleStats" class="label-stats"></label><p class="statText">Statistics</p>
+</div>
+</div>
+
+<div id="avm_active_leased" class="col-xs-12 col-sm-12 col-lg-4 col-md-6 avm_active_leased">
+<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="margin-left:-10px;">
+<label style="padding-top: 25px; font-size: 14px;" id="unselectedCMA">Active CMA</label>
+<label class="pull-right" style="padding-top: 25px;" id="active_cma_count">(7/7)</label>
+<hr style="margin-top: 0px; width: 100%;">
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_2" id="active_price_selected"></span>
+<br />
+<span class="cma_layer_list_2" id="avmunselectedPrice">Active price</span>
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_2" id="active_pricesqft_selected"></span>
+<br />
+<span class="cma_layer_list_2" id="avmunselectedPpsq">Price per square foot</span>
+</div>
+<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="margin-left:-10px;">
+<label style="padding-top: 25px; font-size: 14px;" id="unselectedleasedCMA">Leased CMA</label>
+<label class="pull-right" style="padding-top: 25px;" id="leased_cma_count"></label>
+<hr style="margin-top: 0px; width: 100%;">
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_2" id="leased_monlease"></span>
+<br />
+<span class="cma_layer_list_2" id="unselectedleasedML">Monthly Lease</span>
+</div>
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="margin-left:-10px;">
+<span class="cma_layer_2" id="leased_Ri"></span>
+<br />
+<span class="cma_layer_list_2" id="unselectedleasedRI">Rental Index™</span>
+</div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12" id="statistics" style="display: none;">
+<h3><b>CMA Statistics</b></h3>
+<div class="row">
+<div class="col-sm-12">
+<div class="widget stacked widget-table action-table">
+<div class="widget-content">
+<div class="table-responsive">
+ 
+<table id="totalPropavailable" class="table tableAnalytics discountDeals">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="widget stacked widget-table action-table">
+<div class="widget-content">
+<div class="table-responsive">
+
+<table id="totalPropselected" class="table tableAnalytics discountDeals">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12" style="margin-bottom: 10px;">
+<h3><b>Comparables</b></h3>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="margin-left:5px;">
+<div class="list-group segmented-control" id="avm_Tabs">
+<a href="#list_avm" id="list" rel="list" class="list-group-item active" align="center" style="padding-left:30px;text-align: center;">
+<i class="fa fa-list" aria-hidden="true"></i> List
+</a>
+<a href="#photos_avm" id="photos" rel="photos" class="list-group-item" align="center" style="text-align: center;">
+<i class="fa fa-photo" aria-hidden="true"></i> Photo
+</a>
+</div>
+</div>
+
+<div class="avm_Contents col-xs-12 col-sm-12 col-md-12 col-lg-12" id='list_avm'>
+<div class="row">
+<div class="col-sm-12">
+<div class="widget stacked widget-table action-table">
+<div class="widget-content">
+<div class="table-responsive" id="listmls_table">
+<table class="table" id="comp_detailTable">
+<thead id="av">
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="avm_Contents col-xs-12 col-sm-12 col-md-12 col-lg-12" id='photos_avm' style='display:none'>
+<div class="row">
+
+
+
+<div class="col-sm-12">
+<div class="widget stacked widget-table action-table">
+<div class="widget-content">
+<div class="table-responsive">
+<table class="table" id="comp_photoTable">
+<thead>
+<tr>
+<th class="avm_photo_th"></th>
+<th class="avm_photo_th">Rank</th>
+<th class="avm_photo_th"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="row avm_bottom_content">Our automated CMA is a calculation of estimated market price, computed using proprietary algorithms with 100% MLS data. It is not an appraisal. It is a starting point in determining a home's price. It is a broker price opinion or comparative market analysis and should not be considered an appraisal or opinion of value. In making any decision that relies upon Agents or computer work, you should know that we have not followed the guidelines for development of an appraisal or analysis contained in the Uniform Standards of Professional Appraisal Practice of the Appraisal Foundation.</p>
+</div>
+
+<div class="container" style="display: none" id="avm_Report">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+<div class="fastcma" id="cmaHeaderReport"></div>
+</div>
+</div> 
+
+<div class="row" id="reportTabs">
+<ul class="col-md-12 col-sm-12 col-lg-12 segmented-control-report">
+<li class="active sold_report"><a href="#investment_report" rel="investment_report">Investment Report</a></li>
+<li class="active_prop"><a href="#retail_report" rel="retail_report">Retail Report</a></li>
+</ul>
+
+<div class="col-sm-12 report_content">
+<p class="Display-the-following-information-in-the-report">Display the following information in the report:</p>
+<div class="row form-group col-sm-3 col-xs-6">
+<label class="header-section-checkbox-form">Sold
+<input type="checkbox" value="sold" name="sold" checked="checked">
+<span class="checkmark-form"></span>
+</label>
+</div>
+<div class="row form-group col-sm-3 col-xs-6">
+<label class="header-section-checkbox-form">Active
+<input type="checkbox" value="active" name="active" checked="checked">
+<span class="checkmark-form"></span>
+</label>
+</div>
+<div class="row form-group col-sm-3 col-xs-6">
+<label class="header-section-checkbox-form">Leased
+<input type="checkbox" value="leased" name="leased" checked="checked">
+<span class="checkmark-form"></span>
+</label>
+</div>
+<div class="row form-group col-sm-3 col-xs-6">
+<label class="header-section-checkbox-form">Non-Active
+<input type="checkbox" value="non-active" name="nonActive" checked="checked">
+<span class="checkmark-form"></span>
+</label>
+</div>
+<div class="row form-group col-sm-3 col-xs-6">
+<label class="header-section-checkbox-form">MLS Information
+<input type="checkbox" value="mls-information" name="mls" checked="checked">
+<span class="checkmark-form"></span>
+</label>
+</div>
+<div class="row form-group col-sm-3 col-xs-6">
+<label class="header-section-checkbox-form">Photos
+<input type="checkbox" value="photo" name="photo" checked="checked">
+<span class="checkmark-form"></span>
+</label>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12" style="padding-left: 0px;">
+<div class="form-group pull-right">
+<input class="form-control btn dwnld_pdf" type="submit" name="print" value="DOWNLOAD PDF" onclick="printDiv('wrapper')" />
+<input class="form-control btn search-button" type="submit" name="share" data-toggle="modal" data-target="#share_report" value="SHARE REPORT" />
+</div>
+</div>
+</div>
+</div>
+<div class="row emailWrapper" id='wrapper'>
+<div class="col-sm-12 report_summary">
+
+<div class="header-section-avail">
+<b>Summary</b>
+</div>
+<div class="row header-body-avail summary_section" id="investment_report"></div>
+<div class="row header-body-avail summary_section" id="retail_report" style="display: none;">
+</div>
+
+<div class="header-section-avail">
+<b>Details</b>
+</div>
+<div class="row header-body-avail" id="detail_report">
+</div>
+<hr>
+
+<div class="header-section-avail mls-info">
+<b>MLS Information</b>
+</div>
+<div class="row header-body-avail mls-info" id="mls_info">
+</div>
+<hr>
+
+<div id="comps_report"></div>
+
+<div class="header-section-avail photo-info">
+<b>Photos</b>
+</div>
+<div class="row header-body-avail photo-info" id="photos_report">
+</div>
+<p class="Our-automated-CMA-is-a-calculation-of-estimated-market-price-c">Our automated CMA is a calculation of estimated market price, computed using proprietary algorithms with 100% MLS data. It is not an appraisal. It is a starting point in determining a home's price. It is a broker price opinion or comparative market analysis and should not be considered an appraisal or opinion of value. In making any decision that relies upon Agents or computer work, you should know that we have not followed the guidelines for development of an appraisal or analysis contained in the Uniform Standards of Professional Appraisal Practice of the Appraisal Foundation.</p>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="../v4/templates/avm_arv_fmv.js"></script>
+<script type="text/javascript">
+	$('#sendEmail').show();
+	$('#sendEmailspin').hide();
+	$(document).on('click', '#btn_sendemail', function(e){
+		$('#sendEmail').hide();
+		$('#sendEmailspin').show();
+		e.preventDefault();
+		$('.header-section-avail').makeCssInline();
+		var formData = { };
+		$.each($('#myEmail').serializeArray(), function() {
+			formData[this.name] = this.value;
+		});
+		formData["address"] = $("#address_popup").text();
+		formData["messageHtml"] = $('.emailWrapper')[0].outerHTML;
+		
+		$.ajax({
+			type: "POST",
+			url:'./emailreport.php',
+			data:formData,
+			dataType: "json",
+			success: function (response){
+			}
+		}).done(function(response)  {
+			$("#emailerrorMessage").html(response.responseText);
+			setTimeout(function() {
+				$("#emailerrorMessage").hide('blind', {}, 500);
+				$('#share_report').modal('hide');
+			}, 5000);
+		}).fail(function(response)  {
+			$('#sendEmail').show();
+			$('#sendEmailspin').hide();
+			$("#emailerrorMessage").html("Email sent success!");
+			setTimeout(function() {
+				$("#emailerrorMessage").hide('blind', {}, 500);
+				$('#share_report').modal('hide');
+			}, 5000);
+		}); 
+	});
+</script><div id="footer">
+<div class="footer-bottom">
+<p class="design" style="text-align:center; color: #999999">Version 4.1 | <a href="terms-of-use.php" target="_blank" style="color: #999999">Terms of Use</a> | <a href="privacy-policy.php" target="_blank" style="color: #999999">Privacy Policy</a><br />&copy;&nbsp; <script type="text/javascript">document.write(new Date().getFullYear());</script> Deal Finder LLC. All Rights Reserved.</p>
+</div></div>
+
+<div class="row" style="display: none" id="avm_Report_footer">
+<div class="footer-base">
+<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 center">
+<div class="center" style="margin:32px;">
+<input class="form-control btn dwnld_pdf_bottom" type="submit" name="print" value="DOWNLOAD PDF" onclick="printDiv('wrapper')" />
+<input class="form-control btn search-button_bottom" type="submit" name="share" data-toggle="modal" data-target="#share_report" value="SHARE REPORT" />
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="../v4/templates/avm_arv_fmv.js"></script>
+<script type="text/javascript" src="../v4/templates/mlsdealfinder_result.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/r-2.2.1/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+body{
+background-color: #ffffff !important;
+}
+.bodyadmin{
+background-color: #ffffff !important;
+}
+.bluewhite li a:hover{
+background-color: #123963 !important;
+color: #ffffff !important;	
+}
+#header-nav {
+background-color: #234214 !important;
+}
+#header-nav  ul li.home{
+background-color: #123963 !important;
+}
+.has_submenu .submenu li a:hover {
+color: #ffffff !important;
+background-color: #123963 !important;
+}
+
+tr.bleu_clair {
+background-color:#e0efdd;
+}	
+tr.bleu {
+background-color:#A6CE95;
+}
+tr.vert {
+background-color:#35794B;
+/*color:#ffffff;*/
+}
+tr.odd{
+background-color:#BAD9AD;
+}
+tr.even{
+background-color:#e0efdd;
+}
+tr.odd td.sorting_1 {
+background-color:  !important;-->
+}
+tr.even td.sorting_1{
+}
+tr.odd  td.sorting_2 {
+background-color: #85ad77 !important;
+}
+
+tr.even  td.sorting_2 {
+background-color: #BAD9AD !important;
+}
+tr.odd  td.sorting_3 {
+background-color: #85ad77 !important;
+}
+
+tr.even  td.sorting_3 {
+background-color: #BAD9AD !important;
+}
+.bgcolor{
+background-color: #e0efdd !important;
+
+}
+.table_header{
+background-color:#35794B;
+color: #ffffff;
+}
+.table_header a{
+color: #ffffff;
+}
+.table_header font{
+color: #ffffff !important;
+}
+.report_comp_header{
+background-color: #bad9ad; !important;
+}
+.AvmButtonSelected {
+background-color: #234214;
+color: white;
+}
+.AvmButton{
+background-color: none;
+color: none !important;
+}
+.AvmButton:active                                                 
+{              
+	background-color: #234214; 
+}	  
+button[name=recalc]{
+background-color: #35794b;
+}
+.TableHeader{
+background-color: #35794B !important;
+}
+
+.add-client-label{
+background-color: #35794B !important;
+}	
